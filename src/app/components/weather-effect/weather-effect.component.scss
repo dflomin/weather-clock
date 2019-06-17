@@ -1,0 +1,89 @@
+div {
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000;
+  will-change: transform;
+}
+
+#time-effect {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+@keyframes timeEffect {
+  0% { background: #070c34; }
+  1% { background: #0c2745; }
+  2% { background: #153e64; }
+  3% { background: #1b5271; }
+  5% { background: #38647d; }
+  7% { background: #426a79; }
+  8% { background: #5f7b85; }
+  9% { background: #829ca6; }
+  10% { background: #898091; }
+  11% { background: #7f6f8d; }
+  13% { background: #5e4376; }
+  14% { background: #a4839a; }
+  15% { background: #cfa8ab; }
+  17% { background: #ffb8b9; }
+  18% { background: #d9b7c2; }
+  19% { background: #da9589; }
+  20% { background: #efc49b; }
+  21% { background: #f9ab74; }
+  22% { background: #ffe493; }
+  24% { background: #ffd876; }
+  25% { background: #ffff8e; }
+  26% { background: #feffdf; }
+  27% { background: #f4eeda; }
+  29% { background: #94c3ce; }
+  30% { background: #7dcdd6; }
+  31% { background: #93dfe4; }
+  32% { background: #5cdeee; }
+  33% { background: #61b8de; }
+  34% { background: #54bbe0; }
+  35% { background: #52e5ef; }
+  37% { background: #49d7ef; }
+  38% { background: #2c6dbf; }
+  39% { background: #468ae0; }
+  40% { background: #44a1d9; }
+  41% { background: #2986c9; }
+  42% { background: #3cacd7; }
+  44% { background: #aacac5; }
+  45% { background: #e7e9d4; }
+  46% { background: #fcf6d7; }
+  47% { background: #ffffe0; }
+  48% { background: #ffffd9; }
+  50% { background: #fef2a8; }
+  51% { background: #f5d5c6; }
+  52% { background: #e4b8ba; }
+  53% { background: #e2b5a4; }
+  54% { background: #d3b0b9; }
+  55% { background: #d9c3c9; }
+  56% { background: #e0d7a4; }
+  57% { background: #bdb378; }
+  58% { background: #aea379; }
+  59% { background: #857444; }
+  60% { background: #9c866b; }
+  61% { background: #9a7a66; }
+  62% { background: #a07a63; }
+  63% { background: #bb7b62; }
+  64% { background: #a88683; }
+  66% { background: #776162; }
+  67% { background: #776460; }
+  68% { background: #563547; }
+  69% { background: #2e2333; }
+  70% { background: #18245c; }
+  72% { background: #1c315c; }
+  73% { background: #102750; }
+  74% { background: #091739; }
+  76% { background: #0b0824; }
+  77% { background: #060d26; }
+  78% { background: #110d4b; }
+  79% { background: #020316; }
+  80% { background: #03051c; }
+  81% { background: #01020e; }
+  100% { background: #01020e; }
+}

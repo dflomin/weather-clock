@@ -1,0 +1,9 @@
+<div id="clock" class="{{clockType}}">
+	<div [innerHTML]="timeAnimation"></div>
+	<ng-container *ngIf="clockType === 'classic'">
+		<app-classic-clock></app-classic-clock>
+	</ng-container>
+	<ng-container *ngIf="clockType === 'digital'">
+		<app-digital-clock></app-digital-clock>
+	</ng-container>
+</div>

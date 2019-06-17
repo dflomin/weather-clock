@@ -1,0 +1,10 @@
+<div id="classic-clock" [style.color]="timeColor">
+	<div *ngFor="let i of hours" class="numeral" id="numeral-{{i+1}}" [ngStyle]="{left: positionNumerals(i + 1, 12).x, top: positionNumerals(i + 1, 12).y }" [style.color]="timeColor">
+		{{i+1}}
+	</div>
+	<div *ngFor="let i of minutes" class="minute" id="minute-{{i+1}}" [style.left]="positionNumerals(i + 1, 60).x" [style.top]=" positionNumerals(i + 1, 60).y" [style.transform]="sanitize(((i + 1) * 6))" [style.background]="timeColor"></div>
+	<div id="hands">
+		<div id="minutes" class="{{innerColor === '#000' ? 'morning' : 'night'}}" [ngStyle]="{ transition: (rightMeow.minutes / 60 * 360) === 0 ? '0s transform 6000s background-color' : '0.5s transform, 6000s background-color', transform: 'rotateZ(' + (rightMeow.minutes / 60 * 360) + 'deg)'}"></div>
+		<div id="hours" class="{{innerColor === '#000' ? 'morning' : 'night'}}" [ngStyle]="{ transition: (rightMeow.minutes / 60 * 360) === 0 ? '0s transform 6000s background-color' : '0.5s transform, 6000s background-color', transform: 'rotateZ(' + (rightMeow.hours / 12 * 360) + 'deg)'}"></div>
+	</div>
+</div>

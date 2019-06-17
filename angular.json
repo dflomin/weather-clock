@@ -135,5 +135,12 @@
       }
     }
   },
-  "defaultProject": "weather-clock"
+  "defaultProject": "weather-clock",
+  "schematics": {
+    "@schematics/angular": {
+      "component": {
+        "spec": false
+      }
+    }
+  }
 }
